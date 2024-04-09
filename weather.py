@@ -1,8 +1,9 @@
+#! /usr/bin/python3
+
 import sys
 import requests
 from datetime import date, datetime
 from prettytable import PrettyTable
-
 
 
 def get_current_weather(api_key, city):
@@ -31,7 +32,18 @@ weather_id = current_weather_data['weather'][0]['description']
 
 
 print(f"""
-Today is {day_text}, {d2}
+    ------------------------------------------
+        Today is {day_text}, {d2} 
+    ------------------------------------------
+             /
+    _    _  /
+   (o)--(o)
+  /.______.\ 
+  \________/
+ ./        \.
+( .        , )
+ \ \_\\//_/ /
+  ~~  ~~  ~~
 """)
 
 current = PrettyTable()
